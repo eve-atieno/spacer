@@ -13,7 +13,7 @@ gem "sprockets-rails"
 gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
+# gem "puma", "~> 5.0"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -61,3 +61,20 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'bcrypt', '~> 3.1.7'
+# JWT
+gem 'jwt'
+
+group :production do
+  gem 'puma', '~> 6.1', '>= 6.1.1'
+  gem 'pg', '~> 1.4', '>= 1.4.6'
+end
+
+gem 'net-http'
+
+gem 'rack-cors'
+
+gem "active_model_serializers", "~> 0.10.13"
+
+gem "faker", "~> 3.1"
